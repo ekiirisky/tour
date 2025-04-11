@@ -8,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
 </head>
 <body>
-    <header>
         <div>
             <nav>
                 <ul>
@@ -16,67 +15,136 @@
                         <a href="index.html">
                             <i class="ri-home-4-fill"></i>
                             <span>Home</span>
+                            <div class="bubble">Home</div>
                         </a>
                     </li>
                     <li class="nav-item" data-page="tours">
                         <a href="tour_activity.html#tours">
                             <i class="ri-plane-fill"></i>
                             <span>Tours</span>
+                            <div class="bubble">Tours</div>
                         </a>
                     </li>
                     <li class="nav-item" data-page="activities">
                         <a href="tour_activity.html#activities">
                             <i class="ri-walk-fill"></i>
                             <span>Activity</span>
+                            <div class="bubble">Activity</div>
                         </a>
                     </li>
                     <li class="nav-item" data-page="charter">
                         <a href="charter.html">
                             <i class="ri-roadster-fill"></i>
                             <span>Charter</span>
+                            <div class="bubble">Charter</div>
                         </a>
                     </li>
                     <li class="nav-item" data-page="contact">
                         <a href="contact.html">
                             <i class="ri-phone-fill"></i>
                             <span>Contact</span>
+                            <div class="bubble">Contact</div>
                         </a>
                     </li>
                 </ul>
             </nav>
         </div>
-    </header>
-<main>
-   <!-- Hero Section -->
-    <header class="hero">
+
+   <!-- HTML structure for the integrated hero slider -->
+<section class="hero-slider">
+    <div class="hero-slide" id="ubud-slide">
         <div class="hero-content">
             <h1>Ubud</h1>
             <p>Immerse yourself in the rich cultural heritage of Bali's picturesque Ubud village with our full-day tour package.</p>
             <a href="#tours" class="btn">Explore</a>
         </div>
-    </header>
+    </div>
+    
+    <div class="hero-slide" id="kintamani-slide">
+        <div class="hero-content">
+            <h1>Kintamani</h1>
+            <p>Experience breathtaking views of Mount Batur volcano and the stunning lake while exploring Kintamani's unique highland culture.</p>
+            <a href="#tours" class="btn">Explore</a>
+        </div>
+    </div>
+    
+    <div class="hero-slide" id="uluwatu-slide">
+        <div class="hero-content">
+            <h1>Uluwatu</h1>
+            <p>Discover the magnificent cliff-top temple and witness the famous Kecak dance performance at sunset in Uluwatu.</p>
+            <a href="#tours" class="btn">Explore</a>
+        </div>
+    </div>
 
-    <!-- Destination Slider -->
-    <section class="destination-slider-container">
+    <div class="hero-slide" id="nusapenida-slide">
+        <div class="hero-content">
+            <h1>Nusa Penida</h1>
+            <p>Unforgettable journey to Nusa Penida, a hidden gem off the coast of Bali that boasts some of the most breathtaking scenery.</p>
+            <a href="#tours" class="btn">Explore</a>
+        </div>
+    </div>
+
+    <div class="hero-slide" id="ulundanu-slide">
+        <div class="hero-content">
+            <h1>Ulundanu</h1>
+            <p>Our Bali North Tour takes you on a journey through the untouched natural beauty and rich cultural heritage of Bali's northern region.</p>
+            <a href="#tours" class="btn">Explore</a>
+        </div>
+    </div>
+    
+    <!-- Destination cards overlay - This is the integration -->
+    <div class="destination-cards-overlay">
         <div class="destination-slider">
-            <div class="destination-card">
-                <img src="images/ubud.jpg" alt="Ubud">
-                <h3>Ubud</h3>
-                <p>Bali</p>
+            <div class="destination-card" data-slide="0">
+                <img src="images/ubud1.jpg" alt="Ubud">
+                <div class="destination-card-content">
+                    <h3>Ubud</h3>
+                    <p>Bali</p>
+                </div>
             </div>
-            <div class="destination-card">
-                <img src="images/kintamani.jpg" alt="Kintamani">
-                <h3>Kintamani</h3>
-                <p>Bali</p>
+            <div class="destination-card" data-slide="1">
+                <img src="images/kintamani1.jpg" alt="Kintamani">
+                <div class="destination-card-content">
+                    <h3>Kintamani</h3>
+                    <p>Bali</p>
+                </div>
             </div>
-            <div class="destination-card">
-                <img src="images/uluwatu.jpg" alt="Uluwatu">
-                <h3>Uluwatu</h3>
-                <p>Bali</p>
+            <div class="destination-card" data-slide="2">
+                <img src="images/uluwatu1.jpg" alt="Uluwatu">
+                <div class="destination-card-content">
+                    <h3>Uluwatu</h3>
+                    <p>Bali</p>
+                </div>
+            </div>
+            <div class="destination-card" data-slide="3">
+                <img src="images/nusapenida1.jpg" alt="Nusapenida">
+                <div class="destination-card-content">
+                    <h3>Nusa Penida</h3>
+                    <p>Bali</p>
+                </div>
+            </div>
+            <div class="destination-card" data-slide="4">
+                <img src="images/ulundanu1.jpg" alt="Ulundanu">
+                <div class="destination-card-content">
+                    <h3>Ulundanu</h3>
+                    <p>Bali</p>
+                </div>
             </div>
         </div>
-    </section>
-
+    </div>
+    
+    <div class="slider-controls">
+        <button class="prev-btn"><i class="ri-arrow-up-s-line"></i></button>
+        <div class="slider-dots">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+        </div>
+        <button class="next-btn"><i class="ri-arrow-down-s-line"></i></button>
+    </div>
+</section>
     
     <section class="tour-section-home">
         <div class="tour-container-home">
@@ -87,7 +155,7 @@
                 </div>
                 <div class="tour-card-home">
                     <img src="images/secret-harmony.jpg" alt="Secret Harmonizing Tour">
-                    <div class="tour-title">Secret Harmonizing Tour Of Bali</div>
+                    <div class="tour-title-home">Secret Harmonizing Tour Of Bali</div>
                 </div>
             </div>
             <div class="tour-content-home">
@@ -99,14 +167,12 @@
     </section>
 
     <section class="hero-section-home">
-        <div class="hero-container-home">
-            <img src="images/bali-adventure.jpg" alt="Bali Adventure" class="hero-image-home">
-            <div class="hero-content-home">
+        <div class="hero-content-home">
                 <h1>Start Your Bali Adventure Now with Up to 50% Off Your First Booking</h1>
-                <a href="booking.html" class="book-btn-home">BOOK TOUR <span>☀️</span></a>
+                <a href="booking.html" class="book-btn-home">BOOK TOUR <i class="ri-plane-fill"></i></a>
             </div>
         </div>
-    </section>
+    </section>
 
     <section class="activities-section-home">
         <div class="activities-container-home">
@@ -118,13 +184,16 @@
                 <a href="tour_activity.html#activities" class="explore-btn-home">EXPLORE ALL ACTIVITIES</a>
 
                 <div class="activity-images-home">
-                    <img src="images/scuba-diving.jpg" alt="Scuba Diving">
-                    <img src="images/atv-ride.jpg" alt="ATV Ride">
-                    <img src="images/zipline.jpg" alt="Zipline Adventure">
+                    <img src="images/act1.jpg" alt="Activity 1">
+                    <img src="images/act2.jpg" alt="Activity 2">
+                    <img src="images/act4.jpg" alt="Activity 3">
+                    <img src="images/act5.jpg" alt="Activity 4">
+                    <img src="images/act6.jpg" alt="Activity 5">
+                    <img src="images/act7.jpg" alt="Activity 6">
+                    <img src="images/act8.jpg" alt="Activity 7">
+                    <img src="images/act9.jpg" alt="Activity 8">
+                    <img src="images/act10.jpg" alt="Activity 9">
                 </div>
-            </div>
-            <div class="activities-image-home2">
-                <img src="images/elephant-ride.jpg" alt="Elephant Ride">
             </div>
         </div>
     </section>
@@ -136,37 +205,37 @@
         
             <div class="offer-container">
                 <div class="offer-item">
-                    <img src="assets/icons/driver.png" alt="Experience Driver">
+                    <img src="asset/driver.png" alt="Experience Driver">
                     <h3>Experience Driver.</h3>
                     <p>Our team of experienced drivers are knowledgeable about Bali’s culture, history, and natural beauty.</p>
                 </div>
         
                 <div class="offer-item">
-                    <img src="assets/icons/cancellation.png" alt="Flexible Cancellation">
+                    <img src="asset/cancellation.png" alt="Flexible Cancellation">
                     <h3>Flexible Cancellation.</h3>
                     <p>We understand that plans can change unexpectedly. That’s why we offer flexible cancellation policies.</p>
                 </div>
         
                 <div class="offer-item">
-                    <img src="assets/icons/guide.png" alt="Guide Tips">
+                    <img src="asset/guide.png" alt="Guide Tips">
                     <h3>Guide Tips.</h3>
                     <p>Our guides are passionate about what they do, and they love sharing their knowledge and expertise with our guests.</p>
                 </div>
         
                 <div class="offer-item">
-                    <img src="assets/icons/groups.png" alt="Suitable For Groups">
+                    <img src="asset/groups.png" alt="Suitable For Groups">
                     <h3>Suitable For Groups.</h3>
                     <p>Our tours and activities are suitable for groups of all sizes. Whether you're traveling with family, friends, or colleagues.</p>
                 </div>
         
                 <div class="offer-item">
-                    <img src="assets/icons/photo.png" alt="Photography Tours">
+                    <img src="asset/photo.png" alt="Photography Tours">
                     <h3>Photography Tours.</h3>
                     <p>Bali is a paradise, and we offer specialized drivers as photographers that will help you capture the best shots of Bali.</p>
                 </div>
         
                 <div class="offer-item">
-                    <img src="assets/icons/trips.png" alt="Advanced Trips">
+                    <img src="asset/trips.png" alt="Advanced Trips">
                     <h3>Advanced Trips.</h3>
                     <p>We understand that planning a trip can be overwhelming. That’s why we offer personalized trip planning services.</p>
                 </div>
@@ -179,17 +248,25 @@
         <div class="footer-container">
             <div class="footer-content">
                 <h3>Let Us Plan Your Dream Trip</h3>
-                <h1>Customized Itineraries Tailored to Your Preferences</h1>
+                <h1>Customized Itineraries <p>Tailored to Your Preferences</p></h1>
                 <a href="contact.html" class="btn-contact">Get in Touch</a>
             </div>
             <div class="social-media">
                 <p>Let's be friends</p>
                 <h2>Follow me here:</h2>
                 <div class="social-icons">
-                    <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="images/whatsapp.svg" alt="WhatsApp"></a>
-                    <a href="#"><img src="images/instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="images/tripadvisor.svg" alt="TripAdvisor"></a>
+                    <a href="https://www.facebook.com/profile.php?id=61560187672926" target="_blank" rel="noopener noreferrer">
+                        <img src="images/facebook.svg" alt="Facebook">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer">
+                        <img src="images/whatsapp.svg" alt="WhatsApp">
+                    </a>
+                    <a href="https://www.instagram.com/ggbalitour/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/instagram.svg" alt="Instagram">
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">
+                        <img src="images/tripadvisor.svg" alt="Tripadvisor">
+                    </a>
                 </div>
             </div>
         </div>

@@ -9,80 +9,286 @@
 </head>
 <body>
 
+    <header>
+        <div class="header-content">
+            <span class="header-decor"></span>
+            <h1 class="header-title">Tours</h1>
+        </div>
+    </header>
+
     <!-- Navbar -->
-    <nav>
-        <ul>
-            <li class="nav-item" data-page="home">
-                <a href="index.html">
-                    <i class="ri-home-4-fill"></i>
-                    <span>Home</span>
-                </a>
-            </li>
-            <li class="nav-item" data-page="tours">
-                <a href="tour_activity.html#tours">
-                    <i class="ri-plane-fill"></i>
-                    <span>Tours</span>
-                </a>
-            </li>
-            <li class="nav-item" data-page="activities">
-                <a href="tour_activity.html#activities">
-                    <i class="ri-walk-fill"></i>
-                    <span>Activity</span>
-                </a>
-            </li>
-            <li class="nav-item" data-page="charter">
-                <a href="charter.html">
-                    <i class="ri-roadster-fill"></i>
-                    <span>Charter</span>
-                </a>
-            </li>
-            <li class="nav-item" data-page="contact">
-                <a href="contact.html">
-                    <i class="ri-phone-fill"></i>
-                    <span>Contact</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <!-- Tours Section -->
-    <section id="tours" class="section">
-        <h2>Tours</h2>
-        <p>Explore our amazing tours in Bali.</p>
-        <div class="content-box">
-            <div class="tour-item">
-                <h3>Ubud Tour</h3>
-                <p>Discover the beauty of Ubud, including rice terraces and traditional villages.</p>
+        <nav>
+            <ul>
+                <li class="nav-item" data-page="home">
+                    <a href="index.html">
+                        <i class="ri-home-4-fill"></i>
+                        <span>Home</span>
+                        <div class="bubble">Home</div>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="tours">
+                    <a href="tour_activity.html#tours">
+                        <i class="ri-plane-fill"></i>
+                        <span>Tours</span>
+                        <div class="bubble">Tours</div>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="activities">
+                    <a href="tour_activity.html#activities">
+                        <i class="ri-walk-fill"></i>
+                        <span>Activity</span>
+                        <div class="bubble">Activity</div>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="charter">
+                    <a href="charter.html">
+                        <i class="ri-roadster-fill"></i>
+                        <span>Charter</span>
+                        <div class="bubble">Charter</div>
+                    </a>
+                </li>
+                <li class="nav-item" data-page="contact">
+                    <a href="contact.html">
+                        <i class="ri-phone-fill"></i>
+                        <span>Contact</span>
+                        <div class="bubble">Contact</div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+     <!-- Tour Packages Section -->
+     <section id="tours" class="tours">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="decor"></span> Tour Packages
+            </h2>
+
+            <div class="tour-list">
+                <!-- Tour Item 1 -->
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/ubud.jpg" alt="Tour Image">
+                        <div class="image-decor"></div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Unravel the Hidden Gems of Ubud: Experience Bali's Culture, History, and Natural</h3>
+                        <p>Immerse yourself in the rich cultural heritage of Bali's picturesque Ubud village with our full-day tour package. In just one day, you can explore the ancient temples, scenic rice paddies, and bustling markets that make Ubud so unique.</p>
+                    </div>
+                    <div class="tour-info">
+                        <div class="duration">10 Hour</div>
+                        <ul>
+                            <li>👨🏻‍💼 Driver</li>
+                            <li>🚙 Car</li>
+                            <li>⛽ Petrol</li>
+                        </ul>
+                    </div>
+                    <div class="tour-price">
+                        <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Tour Item 2 -->
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/gunung-batur.jpg" alt="Tour Image">
+                        <div class="image-decor"></div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Bali’s Majestic Volcano: Unveiling Breathtaking Scenery and Cultural with Our Kintamani Tour</h3>
+                        <p>Embark on a journey of a lifetime with our Kintamani tour and be captivated by Bali's mesmerizing landscape and cultural gems. You will be awed by the majestic view of Mount Batur, an active volcano that is surrounded by picturesque scenery of caldera and lake.</p>
+                    </div>
+                    <div class="tour-info">
+                        <div class="duration">10 Hour</div>
+                        <ul>
+                            <li>👨🏻‍💼 Driver</li>
+                            <li>🚙 Car</li>
+                            <li>⛽ Petrol</li>
+                        </ul>
+                    </div>
+                    <div class="tour-price">
+                        <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Tour Item 3 -->
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/pantai.jpg" alt="Tour Image">
+                        <div class="image-decor"></div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Unveiling the Hidden Gems of Bali's South : Embark on a Journey of Discovery with Our South Bali Tour.</h3>
+                        <p>Get ready to embark on an unforgettable journey to the stunning southern part of Bali, where you'll discover breathtaking beaches and cultural landmarks that will leave you in awe. Our expertly crafted tour takes you to some of Bali's most iconic spots.</p>
+                    </div>
+                    <div class="tour-info">
+                        <div class="duration">10 Hour</div>
+                        <ul>
+                            <li>👨🏻‍💼 Driver</li>
+                            <li>🚙 Car</li>
+                            <li>⛽ Petrol</li>
+                        </ul>
+                    </div>
+                    <div class="tour-price">
+                        <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Tour Item 4 -->
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/ulundanu.jpg" alt="Tour Image">
+                        <div class="image-decor"></div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Natural Wonders and Cultural Richness of Bali's North with Our Customized Tour Package</h3>
+                        <p>Our Bali North Tour takes you on a journey through the untouched natural beauty and rich cultural heritage of Bali's northern region. Experience the tranquility of secluded waterfalls, explore the fascinating history of ancient temples, and immerse yourself in the local way of life in traditional villages.</p>
+                    </div>
+                    <div class="tour-info">
+                        <div class="duration">10 Hour</div>
+                        <ul>
+                            <li>👨🏻‍💼 Driver</li>
+                            <li>🚙 Car</li>
+                            <li>⛽ Petrol</li>
+                        </ul>
+                    </div>
+                    <div class="tour-price">
+                        <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Tour Item 5 -->
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/Dwarapala.jpg" alt="Tour Image">
+                        <div class="image-decor"></div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Unspoiled Beauty : Discover the Hidden Gems of East Bali with Our Customized Tour Package</h3>
+                        <p>One of the highlights of our East Bali Tour. Marvel at the breathtaking scenery as you witness the sunrise from its peak and learn about the cultural significance of this sacred mountain to the Balinese people.</p>
+                    </div>
+                    <div class="tour-info">
+                        <div class="duration">10 Hour</div>
+                        <ul>
+                            <li>👨🏻‍💼 Driver</li>
+                            <li>🚙 Car</li>
+                            <li>⛽ Petrol</li>
+                        </ul>
+                    </div>
+                    <div class="tour-price">
+                        <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Tour Item 6 -->
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/lempuyang.jpg" alt="Tour Image">
+                        <div class="image-decor"></div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Sacred Beauty of Bali's Lempuyang Temple : Experience a Journey of Spiritual Enlightenment</h3>
+                        <p>Experience a scenic drive through the lush countryside, passing by verdant rice fields and picturesque villages. Marvel at the stunning views of Mount Agung, Bali's highest and holiest mountain, as you ascend towards the temple.</p>
+                    </div>
+                    <div class="tour-info">
+                        <div class="duration">10 Hour</div>
+                        <ul>
+                            <li>👨🏻‍💼 Driver</li>
+                            <li>🚙 Car</li>
+                            <li>⛽ Petrol</li>
+                        </ul>
+                    </div>
+                    <div class="tour-price">
+                        <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
+
+                <!-- Tour Item 7 -->
+                <div class="tour-item">
+                    <div class="tour-image">
+                        <img src="images/nusapenida1.jpg" alt="Tour Image">
+                        <div class="image-decor"></div>
+                    </div>
+                    <div class="tour-content">
+                        <h3>Discover the Untouched Beauty of Nusa Penida</h3>
+                        <p>Unforgettable journey to Nusa Penida, a hidden gem off the coast of Bali that boasts some of the most breathtaking scenery you'll ever see. Our expert guides will take you on a journey to explore</p>
+                    </div>
+                    <div class="tour-info">
+                        <div class="duration">10 Hour</div>
+                        <ul>
+                            <li>👨🏻‍💼 Driver</li>
+                            <li>🚙 Car</li>
+                            <li>⛽ Petrol</li>
+                        </ul>
+                    </div>
+                    <div class="tour-price">
+                        <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer" class="book-btn">BOOK NOW</a>
+                    </div>
+                </div>
             </div>
-            <div class="tour-item">
-                <h3>Nusa Penida Tour</h3>
-                <p>Enjoy the stunning beaches and cliffs of Nusa Penida.</p>
-            </div>
-            <div class="tour-item">
-                <h3>Sunset Tour</h3>
-                <p>Witness breathtaking sunsets at Bali’s best spots.</p>
-            </div>
+
         </div>
     </section>
 
     <!-- Activities Section -->
-    <section id="activities" class="section">
-        <h2>Activities</h2>
-        <p>Experience the best activities Bali has to offer.</p>
-        <div class="content-box">
-            <div class="activity-item">
-                <h3>Snorkeling</h3>
-                <p>Explore the underwater beauty of Bali’s coral reefs.</p>
+    <section id="activities" class="activities">
+        <div class="activities-header">
+            <h2>Activities</h2>
+        </div>
+    
+        <div class="special-activities">
+            <div class="title">
+                <div class="decor"></div>
+                <h2>Special Activities</h2>
             </div>
-            <div class="activity-item">
-                <h3>Rafting</h3>
-                <p>Enjoy an adrenaline-pumping adventure on Bali’s rivers.</p>
-            </div>
-            <div class="activity-item">
-                <h3>ATV Ride</h3>
-                <p>Ride through jungle trails and muddy paths for an unforgettable adventure.</p>
             </div>
         </div>
-    </section>
+    
+        <div class="activities-list">
+            <div class="activity-card">
+                <img src="images/elephant-ride.jpg" alt="Elephant Ride">
+                <h3>Elephant Ride - Bali Safari Park’s</h3>
+                <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer">BOOK NOW</a>
+            </div>
+            <div class="activity-card">
+                <img src="images/bali-swing.jpg" alt="Bali Swing">
+                <h3>Bali Swing : Fly Higher</h3>
+                <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer">BOOK NOW</a>
+            </div>
+            <div class="activity-card">
+                <img src="images/white-water-rafting.jpg" alt="White Water Rafting">
+                <h3>White Water Rafting : Get Your Heart Pumping</h3>
+                <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer">BOOK NOW</a>
+            </div>
+        </div>
+    
+        <div class="other-activities">
+            <div class="activity">
+                <img src="images/quad-bike.jpg" alt="Bali Quad Bike">
+                <div>
+                    <h3>Bali Quad Bike Adventure</h3>
+                    <p>Embark on an Exciting Off-Road Journey with Breathtaking Views</p>
+                    <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer">BOOK NOW</a>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="images/jet-ski.jpg" alt="Bali Water Sports">
+                <div>
+                    <h3>Bali Water Sports</h3>
+                    <p>Exciting Adventures for the Thrill-Seekers in You!</p>
+                    <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer">BOOK NOW</a>
+                </div>
+            </div>
+            <div class="activity">
+                <img src="images/scuba-diving.jpg" alt="Bali Diving">
+                <div>
+                    <h3>Bali Diving</h3>
+                    <p>Discover the Wonders of the Underwater World with Experienced Guides</p>
+                    <a href="https://api.whatsapp.com/send?phone=6282266444325" target="_blank" rel="noopener noreferrer">BOOK NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>    
 
     <footer>
         <div class="footer-container">
